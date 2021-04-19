@@ -14,7 +14,7 @@ etherpad:  https://pad.carpentries.org/2021-05-03-instructor-training           
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
-    address: "Zoom link coming soon."
+    address: ""
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -106,7 +106,7 @@ locations:
 
 {% if online == "online" %}
 
-This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <{{ loc.address }}>.
+This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is {{ loc.address | default: "coming soon"}}.
 
 {% else %}
 {% assign inperson = "true" %}
