@@ -267,7 +267,6 @@ scheduled end time.</em></p>
     </table>
   </div>
 </div>
--->
 
 <!--
   ETHERPAD
